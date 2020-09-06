@@ -27,3 +27,17 @@ function CheckPalindrome() {
         }
 }
 CheckPalindrome();
+
+//3. Integer Reversal
+//Given an integer, reverse the order of the digits.
+const int = 1234
+function integerReverse() {
+    const newInt = int.toString()
+    const array = newInt.split("")
+    const reversedInt = array.reverse();
+    const finalInt = reversedInt.join("");
+    console.log(finalInt)
+    const intReversed = parseInt(finalInt)
+    console.log(intReversed)
+}
+integerReverse();
