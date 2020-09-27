@@ -63,3 +63,55 @@ function fizzbuzz(n) {
     }
 }
 fizzbuzz(10);
+
+//5. Max Character
+//Given a string of characters, return the character that appears the most often.
+const charString = "I am characters"
+function maxCharacter() {
+    
+}
+
+//Mentor suggestion
+// take an array of numbers and return the indices of the first pair that adds up to 
+// a target. (example: array [1, 3, 5, 6, 4], target 9, the output would be [1,3]. 
+// Work on getting the first pair, then once the solution is in place, 
+// return an array of pairs.
+
+let exArray = [1, 3, 5, 6, 4];
+let target = 9;
+
+// use a hash table/ JS object for efficiency 
+
+let twoSum = function(exArray, target) {
+    numsIndex = {};
+
+    for (let i = 0;  i < exArray.length ; i ++) {
+        let currentDiff = target - exArray[i];
+
+        if (numsIndex[currentDiff] !== undefined && numsIndex[currentDiff] !== i) {
+            return [i, numsIndex[currentDiff]];
+            
+        } else {
+            numsIndex[exArray[i]] = i;
+        }
+
+    }
+
+}
+
+twoSum(exArray, target);
+
+//explanation of code: create function two sum that takes in the array and the target
+// create an object numsIndex  to create a hash table
+//use a for loop to loop through the example array
+// use curretnDiff variable to store the target minus the current number
+//in the array ex: 9 - 1 = 8 
+//if the current diff is in the hash map and is not undefined and is not the current
+// number in the example array then we can return the current number's index and the
+// hashmap's value for the current diff's key
+//otherwise add the current number in the example array to the hash map as a key
+// and add the index as a value 
+
+
+
+
