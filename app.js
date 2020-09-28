@@ -71,7 +71,7 @@ function maxCharacter() {
     
 }
 
-//Mentor suggestion
+//Mentor suggestion #1
 // take an array of numbers and return the indices of the first pair that adds up to 
 // a target. (example: array [1, 3, 5, 6, 4], target 9, the output would be [1,3]. 
 // Work on getting the first pair, then once the solution is in place, 
@@ -113,5 +113,25 @@ twoSum(exArray, target);
 // and add the index as a value 
 
 
+//mentor suggestion 2
+// take a relative path and the current path and return the absolute 
+// path (like how files get imported) - it will work with manipulating 
+// strings and arrays
+
+// path with reference to root directory is called absolute
+// path with reference to current directory is called relative
+
+let relativePath = 'dataStructures-Algorithms';
+let currentPath = '/Users/cierranease/interview/dataStructures-Algorithms';
 
 
+
+//mentor suggestion 3
+// write a function that takes a form id and parses through the 
+// dom to create a request object (for example <form><input name="foo.bar"></form>  
+// would output {foo: {bar: <value>}} start with just text inputs, 
+// then start adding the other cases.
+
+let findId = function(id) {
+
+}
