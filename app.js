@@ -113,6 +113,7 @@ twoSum(exArray, target);
 // and add the index as a value 
 
 
+
 //mentor suggestion 2
 // take a relative path and the current path and return the absolute 
 // path (like how files get imported) - it will work with manipulating 
@@ -121,8 +122,18 @@ twoSum(exArray, target);
 // path with reference to root directory is called absolute
 // path with reference to current directory is called relative
 
-let relativePath = 'dataStructures-Algorithms';
-let currentPath = '/Users/cierranease/interview/dataStructures-Algorithms';
+let relativePath = '/foobar';
+let currentPath = 'https://foo.org/bar';
+
+let re = /[/w-]/
+let newOne = relativePath.replace(re, "");
+console.log(newOne)
+let re2 = /\/bar/;
+let newCurrent = currentPath.replace(re2, "");
+console.log(newCurrent);
+let absolutePath = `${newCurrent}/${newOne}`;
+console.log(absolutePath);
+
 
 
 
@@ -132,6 +143,6 @@ let currentPath = '/Users/cierranease/interview/dataStructures-Algorithms';
 // would output {foo: {bar: <value>}} start with just text inputs, 
 // then start adding the other cases.
 
-let findId = function(id) {
+//let findId = function(id) {
 
-}
+//}
